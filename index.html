@@ -9,8 +9,22 @@
 <body>
     <main>
        <h1>Yellow Notes</h1>
-       <div class="listTugas">
-        
+       <div class="containerList">
+        <ul id="listTugas">
+            <li>
+                <span id="Nama Tugas">Belajar React</span>
+                <span id="Deadline">29 Desember 2023</span>
+                <span id="checkStatus">
+                    <label for="status">Status</label>
+                    <input type="checkbox" name="status" id="status">
+                </span>    
+            </li>
+        </ul>
+        <form action="">
+            <input type="text" name="masukan" id="masukan" placeholder="Masukkan tugas"><br>
+            <input type="date" name="tanggal" id="tanggal"><br>
+            <input type="submit" value="Tambah tugas">
+        </form>
        </div>
     </main>
     <script src="script.js"></script>

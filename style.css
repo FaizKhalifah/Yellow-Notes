@@ -8,3 +8,43 @@ main{
     background-color: yellow;
     text-align: center;
 }
+
+.containerList{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+#listTugas{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#listTugas li{
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type=text]{
+    margin: 1.5rem;
+    padding: 1rem 1.1rem;
+    border: none;
+    border-radius: 2rem;
+}
+input[type=submit]{
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    padding: 1.1rem;
+    margin: 1.5rem;
+    background-color: rgb(255, 166, 0);
+}
