@@ -47,3 +47,5 @@ formTambah.addEventListener('submit',function(e){
     })
 })
 
+//Menambah fungsi Delete
+
