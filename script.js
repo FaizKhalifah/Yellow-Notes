@@ -34,5 +34,16 @@ formTambah.addEventListener('submit',function(e){
 
     //Menambah li pada ul
     ul.appendChild(listTugas);
+
+    //Status pada checkbox
+    status.addEventListener('change',function(){
+        if(status.checked){
+            listTugas.style.backgroundColor="green";
+            listTugas.style.color="white";
+        }
+        else{
+            listTugas.style.backgroundColor="";
+        }
+    })
 })
 
