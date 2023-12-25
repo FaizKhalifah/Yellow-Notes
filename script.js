@@ -8,13 +8,19 @@ formTambah.addEventListener('submit',function(e){
     console.log(masukanTugas);
     console.log(tanggal);
 
+    //Create berbagai elemen
     const listTugas = document.createElement('li');
     const namaTugas=document.createElement('span');
     const deadline=document.createElement('span');
     const checkStatus = document.createElement('span');
     const labelStatus = document.createElement('label');
     const status = document.createElement('input');
-    status.setAttribute('type','checkbox')
+    status.setAttribute('type','checkbox');
+
+    //Menambahkan text pada berbagai elemen
+    namaTugas.innerText=masukanTugas;
+    deadline.innerText=tanggal;
+    labelStatus.innerText="Status ";
 
 
     //Menambah elemen pada span status
@@ -24,6 +30,7 @@ formTambah.addEventListener('submit',function(e){
     //Menambah elemen span pada li
     listTugas.appendChild(namaTugas);
     listTugas.appendChild(deadline);
+    listTugas.appendChild(checkStatus);
 
     //Menambah li pada ul
     ul.appendChild(listTugas);
