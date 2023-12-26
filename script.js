@@ -16,6 +16,7 @@ formTambah.addEventListener('submit',function(e){
     const labelStatus = document.createElement('label');
     const status = document.createElement('input');
     status.setAttribute('type','checkbox');
+    status.setAttribute('id','check');
 
     //Menambahkan text pada berbagai elemen
     namaTugas.innerText=masukanTugas;
@@ -48,4 +49,13 @@ formTambah.addEventListener('submit',function(e){
 })
 
 //Menambah fungsi Delete
-
+const hapus = document.querySelector("#hapus");
+hapus.addEventListener('click',function(){
+    const kumpulanChecklist = document.querySelectorAll('#check');
+    for(i=0;i<kumpulanChecklist.length;i++){
+        if(kumpulanChecklist[i].checked){
+            kumpulanChecklist[i].parentElement.parentElement.style.display='none';
+        }
+        
+    }
+})
